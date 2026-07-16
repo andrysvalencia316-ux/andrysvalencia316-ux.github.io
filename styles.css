@@ -250,6 +250,15 @@ h1 {
 
 .country-card h3 {
   color: var(--accent);
+  margin-top: 12px;
+}
+
+.country-flag {
+  width: 56px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(43, 20, 13, 0.12);
+  display: block;
 }
 
 .surprise-section {
