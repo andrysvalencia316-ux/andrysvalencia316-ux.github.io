@@ -1,29 +1,97 @@
-<!doctype html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Mangú - Dominican Food</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+body{
+    background:#fff8f0;
+}
 
-<body>
+header{
+    background:#d62828;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-    <h1>Mangú</h1>
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
 
-    <p>Mangú is a traditional Dominican breakfast made from mashed green plantains.</p>
+nav a:hover{
+    color:yellow;
+}
 
-    <h2>Learn More</h2>
+.hero{
+    text-align:center;
+    padding:50px;
+    background:#fcbf49;
+}
 
-    <ul>
-        <li><a href="https://www.dominicancooking.com/532/mangu" target="_blank">Dominican Cooking - Mangú</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Mang%C3%BA" target="_blank">Wikipedia - Mangú</a></li>
-        <li><a href="https://www.tasteatlas.com/mangu" target="_blank">TasteAtlas - Mangú</a></li>
-    </ul>
+.hero h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
 
-    <br>
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
 
-    <a href="index.html">Back to Home</a>
+#search{
+    padding:12px;
+    width:300px;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+}
 
-</body>
-</html>
+.foods{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    border-radius:12px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px;
+    color:#d62828;
+}
+
+.card p{
+    margin:15px;
+}
+
+footer{
+    background:#003049;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
