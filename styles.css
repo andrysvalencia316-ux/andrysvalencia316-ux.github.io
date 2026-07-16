@@ -146,7 +146,25 @@ h1 {
 .hero-copy {
   font-size: 1.05rem;
   color: #fbead4;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.hero-badges span {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 250, 244, 0.16);
+  border: 1px solid rgba(255, 250, 244, 0.24);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff7eb;
 }
 
 .hero-actions {
@@ -214,6 +232,33 @@ h1 {
 
 .section {
   padding: 24px 0;
+}
+
+.surprise-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 8px 0 24px;
+}
+
+.surprise-card {
+  background: linear-gradient(135deg, rgba(255, 248, 239, 0.98), rgba(255, 234, 208, 0.96));
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(43, 20, 13, 0.06);
+}
+
+.accent-card {
+  background: linear-gradient(135deg, rgba(164, 61, 43, 0.14), rgba(241, 196, 122, 0.24));
+}
+
+.surprise-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
 }
 
 .gallery-section {
@@ -287,6 +332,12 @@ h1 {
   padding: 0 0 24px;
   overflow: hidden;
   position: relative;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(43, 20, 13, 0.1);
 }
 
 .menu-card img {
@@ -399,7 +450,8 @@ footer {
   .menu-grid,
   .story-section,
   .visit-section,
-  .gallery-section {
+  .gallery-section,
+  .surprise-section {
     grid-template-columns: 1fr;
   }
 
