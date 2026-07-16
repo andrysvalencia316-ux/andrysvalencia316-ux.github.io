@@ -234,6 +234,24 @@ h1 {
   padding: 24px 0;
 }
 
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.country-card {
+  background: linear-gradient(135deg, rgba(255, 248, 239, 0.98), rgba(255, 234, 208, 0.96));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(43, 20, 13, 0.05);
+}
+
+.country-card h3 {
+  color: var(--accent);
+}
+
 .surprise-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -451,7 +469,8 @@ footer {
   .story-section,
   .visit-section,
   .gallery-section,
-  .surprise-section {
+  .surprise-section,
+  .countries-grid {
     grid-template-columns: 1fr;
   }
 
