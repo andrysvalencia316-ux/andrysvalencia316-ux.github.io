@@ -1,21 +1,12 @@
-const search = document.getElementById("search");
+document.addEventListener('DOMContentLoaded', () => {
+  const year = document.getElementById('year');
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
 
-search.addEventListener("keyup", function(){
-
-    let filter = search.value.toLowerCase();
-
-    let cards = document.querySelectorAll(".card");
-
-    cards.forEach(function(card){
-
-        let title = card.querySelector("h3").textContent.toLowerCase();
-
-        if(title.includes(filter)){
-            card.style.display = "block";
-        }else{
-            card.style.display = "none";
-        }
-
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      document.documentElement.style.scrollBehavior = 'smooth';
     });
-
+  });
 });
